@@ -23,11 +23,15 @@ OPTIONS = ['Bulgaria Lev',
 SYMBOLS = ['BGN','EUR','INR','IDR','ILS','JPY','THB','GBP','USD']
 
 def action():
+    #original currency
     p1=variable1.get()
+    #original amount
     n1=v1.get()
+    #converted currency
     p2=variable2.get()
     m1=SYMBOLS[OPTIONS.index(p1)]
     m2 = SYMBOLS[OPTIONS.index(p2)]
+    #converted amount using library function
     n2=c.convert(m1,m2,n1)
     E2.config(text=cur.get_symbol(m2)+' '+str(n2))
 
