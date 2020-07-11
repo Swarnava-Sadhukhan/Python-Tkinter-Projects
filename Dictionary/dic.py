@@ -5,6 +5,7 @@ import json
 root=Tk()
 root.geometry('250x200')
 
+#search the meaning
 def find_meaning():
     word=e1.get()
     dic=PyDictionary()
